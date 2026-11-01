@@ -1,4 +1,4 @@
-import type { FilterStatus } from "./todo";
+import type { FilterStatus, Todo } from "./todo";
 
 export interface TodoFilterProps {
   currentFilter: FilterStatus;
@@ -8,4 +8,10 @@ export interface TodoFilterProps {
 
 export interface TodoInputProps {
   onAdd: (title: string) => boolean;
+}
+
+export interface TodoItemProps {
+  todo: Todo;
+  onToggle: (id: string) => void;
+  onRemove: (id: string) => void;
 }
