@@ -1,0 +1,1 @@
+export const STORAGE_KEY = "zaloghub_todos_v1";
